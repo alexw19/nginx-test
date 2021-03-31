@@ -1,7 +1,6 @@
 ## INSTRUCTIONS FOR RUNNING SCRIPT
 
-* Rename run.sh.test in proxy/ to run.sh and chmod +x 
-* Run commands below
+* Execute ./start-script.sh or run commands below
 ```
 cd proxy/
 docker build --tag nginx-test:0.0.1 .
