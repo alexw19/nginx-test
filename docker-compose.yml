@@ -1,0 +1,13 @@
+version: '2'
+services:
+  web:
+    image: webserver-image:v1
+  auth:
+    image: nginx-test:0.0.1
+    ports:
+      - 443:443
+    links:
+      - web
+    environment:
+      - BASIC_AUTH_USERNAME=username
+      - BASIC_AUTH_PASSWORD=password
